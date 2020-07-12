@@ -419,3 +419,180 @@ Session ID: c69a914a92e2e21793372bf06030e27f
 2020-03-05 17:45:44,628 INFO  [Log] X 
 2020-03-05 17:45:44,628 INFO  [Log] X 
 2020-03-05 17:45:44,628 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 20:36:30,244 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-12 20:36:30,248 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 20:45:40,818 ERROR [Log] Class Utils | Method getRowCount | Exception desc : null 
+2020-07-12 20:45:40,818 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 20:45:51,930 ERROR [Log] Class Utils | Method setExcelFile | Exception desc : org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13] 
+2020-07-12 20:45:52,206 ERROR [Log] Class Utils | Method getRowCount | Exception desc : null 
+2020-07-12 20:45:52,206 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 20:45:52,313 ERROR [Log] Class Utils | Method setExcelFile | Exception desc : org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13] 
+2020-07-12 20:45:52,554 ERROR [Log] Class Utils | Method getRowCount | Exception desc : null 
+2020-07-12 20:45:52,554 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 20:45:55,026 ERROR [Log] Class Utils | Method setExcelFile | Exception desc : org.apache.poi.openxml4j.exceptions.InvalidFormatException: Package should contain a content type part [M1.13] 
+2020-07-12 20:45:55,296 ERROR [Log] Class Utils | Method getRowCount | Exception desc : null 
+2020-07-12 20:45:55,296 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 20:46:23,828 INFO  [Log] **************************************************************************************** 
+2020-07-12 20:46:23,828 INFO  [Log] **************************************************************************************** 
+2020-07-12 20:46:23,828 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Recipes       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 20:46:23,828 INFO  [Log] **************************************************************************************** 
+2020-07-12 20:46:23,828 INFO  [Log] **************************************************************************************** 
+2020-07-12 20:46:58,777 ERROR [Log] Khong tim thay Element de doi --- chrome not reachable
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DICOANHPHAN1', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\oanhphan\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: e7791260189c3d93117b2548d5caaa2a
+*** Element info: {Using=xpath, value=/html/body/form/div[1]/input} 
+2020-07-12 20:47:02,787 ERROR [Log] Khong the nhap --- chrome not reachable
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DICOANHPHAN1', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\oanhphan\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: e7791260189c3d93117b2548d5caaa2a
+*** Element info: {Using=xpath, value=/html/body/form/div[1]/input} 
+2020-07-12 20:47:02,951 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 20:47:02,951 INFO  [Log] X 
+2020-07-12 20:47:02,951 INFO  [Log] X 
+2020-07-12 20:47:02,951 INFO  [Log] X 
+2020-07-12 20:47:02,951 INFO  [Log] X 
+2020-07-12 20:47:02,951 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-12 20:47:02,952 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 23:02:04,788 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:02:04,788 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:02:04,789 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Order       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:02:04,789 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:02:04,789 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:02:04,791 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-12 23:02:09,445 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:02:09,445 INFO  [Log] X 
+2020-07-12 23:02:09,445 INFO  [Log] X 
+2020-07-12 23:02:09,445 INFO  [Log] X 
+2020-07-12 23:02:09,445 INFO  [Log] X 
+2020-07-12 23:02:09,445 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-12 23:02:09,447 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 23:03:32,414 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:03:32,415 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:03:32,415 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Order       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:03:32,415 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:03:32,415 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:03:32,419 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-12 23:03:36,686 INFO  [Log] khong the chuyen huong --- null value in entry: url=null 
+2020-07-12 23:03:36,953 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:03:36,953 INFO  [Log] X 
+2020-07-12 23:03:36,953 INFO  [Log] X 
+2020-07-12 23:03:36,953 INFO  [Log] X 
+2020-07-12 23:03:36,953 INFO  [Log] X 
+2020-07-12 23:03:36,953 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-12 23:03:36,955 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 23:08:00,136 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:00,136 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:00,136 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:08:00,136 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:00,233 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:04,368 INFO  [Log] khong the chuyen huong --- null value in entry: url=null 
+2020-07-12 23:08:04,590 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:08:04,590 INFO  [Log] X 
+2020-07-12 23:08:04,590 INFO  [Log] X 
+2020-07-12 23:08:04,590 INFO  [Log] X 
+2020-07-12 23:08:04,590 INFO  [Log] X 
+2020-07-12 23:08:04,590 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:04,590 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:04,590 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:08:04,591 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:04,591 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:07,726 INFO  [Log] khong the chuyen huong --- null value in entry: url=null 
+2020-07-12 23:08:07,925 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:08:07,925 INFO  [Log] X 
+2020-07-12 23:08:07,925 INFO  [Log] X 
+2020-07-12 23:08:07,926 INFO  [Log] X 
+2020-07-12 23:08:07,926 INFO  [Log] X 
+2020-07-12 23:08:07,926 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:07,926 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:07,926 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:08:07,926 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:07,926 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:08:11,056 INFO  [Log] khong the chuyen huong --- null value in entry: url=null 
+2020-07-12 23:08:11,271 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:08:11,271 INFO  [Log] X 
+2020-07-12 23:08:11,271 INFO  [Log] X 
+2020-07-12 23:08:11,271 INFO  [Log] X 
+2020-07-12 23:08:11,271 INFO  [Log] X 
+2020-07-12 23:08:11,271 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 23:10:01,382 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:01,382 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:01,382 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:10:01,382 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:01,382 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:05,540 INFO  [Log] khong the chuyen huong --- null value in entry: url=null 
+2020-07-12 23:10:05,772 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:10:05,772 INFO  [Log] X 
+2020-07-12 23:10:05,772 INFO  [Log] X 
+2020-07-12 23:10:05,772 INFO  [Log] X 
+2020-07-12 23:10:05,772 INFO  [Log] X 
+2020-07-12 23:10:05,772 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:05,772 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:05,772 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:10:05,772 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:05,772 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:08,962 INFO  [Log] khong the chuyen huong --- null value in entry: url=null 
+2020-07-12 23:10:09,143 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:10:09,143 INFO  [Log] X 
+2020-07-12 23:10:09,143 INFO  [Log] X 
+2020-07-12 23:10:09,143 INFO  [Log] X 
+2020-07-12 23:10:09,143 INFO  [Log] X 
+2020-07-12 23:10:09,144 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:09,144 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:09,144 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:10:09,144 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:09,144 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:10:12,630 INFO  [Log] khong the chuyen huong --- null value in entry: url=null 
+2020-07-12 23:10:12,792 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:10:12,793 INFO  [Log] X 
+2020-07-12 23:10:12,793 INFO  [Log] X 
+2020-07-12 23:10:12,793 INFO  [Log] X 
+2020-07-12 23:10:12,793 INFO  [Log] X 
+2020-07-12 23:10:12,793 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-12 23:11:21,876 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:21,877 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:21,877 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:11:21,877 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:21,877 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:26,486 ERROR [Log] Khong tim thay Element de doi --- Cannot find elements when the XPath is null. 
+2020-07-12 23:11:26,486 ERROR [Log] Khong the nhap --- Cannot find elements when the XPath is null. 
+2020-07-12 23:11:26,763 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:11:26,763 INFO  [Log] X 
+2020-07-12 23:11:26,763 INFO  [Log] X 
+2020-07-12 23:11:26,763 INFO  [Log] X 
+2020-07-12 23:11:26,763 INFO  [Log] X 
+2020-07-12 23:11:26,763 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:26,763 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:26,763 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:11:26,763 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:26,763 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:30,198 ERROR [Log] Khong tim thay Element de doi --- Cannot find elements when the XPath is null. 
+2020-07-12 23:11:30,198 ERROR [Log] Khong the nhap --- Cannot find elements when the XPath is null. 
+2020-07-12 23:11:30,413 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:11:30,413 INFO  [Log] X 
+2020-07-12 23:11:30,413 INFO  [Log] X 
+2020-07-12 23:11:30,413 INFO  [Log] X 
+2020-07-12 23:11:30,413 INFO  [Log] X 
+2020-07-12 23:11:30,413 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:30,413 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:30,413 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Sam_Pham       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-12 23:11:30,413 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:30,413 INFO  [Log] **************************************************************************************** 
+2020-07-12 23:11:33,720 ERROR [Log] Khong tim thay Element de doi --- Cannot find elements when the XPath is null. 
+2020-07-12 23:11:33,720 ERROR [Log] Khong the nhap --- Cannot find elements when the XPath is null. 
+2020-07-12 23:11:33,851 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-12 23:11:33,851 INFO  [Log] X 
+2020-07-12 23:11:33,851 INFO  [Log] X 
+2020-07-12 23:11:33,851 INFO  [Log] X 
+2020-07-12 23:11:33,851 INFO  [Log] X 
+2020-07-12 23:11:33,852 INFO  [Log] TESTCASES IS COMPLETED!!! 
