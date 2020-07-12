@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/commons-lang3-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/commons-lang3-3.9-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/commons-lang3-3.9-tests.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/commons-lang3-3.9-test-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-1.2-api-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-1.2-api-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-1.2-api-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-api-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-api-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-api-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-appserver-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-appserver-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-appserver-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-cassandra-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-cassandra-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-cassandra-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-core-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-core-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-core-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-core-2.11.2-tests.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-couchdb-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-couchdb-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-couchdb-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-flume-ng-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-flume-ng-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-flume-ng-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-iostreams-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-iostreams-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-iostreams-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jcl-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jcl-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jcl-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jdbc-dbcp2-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jdbc-dbcp2-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jdbc-dbcp2-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jmx-gui-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jmx-gui-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jmx-gui-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jpa-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jpa-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jpa-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jul-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jul-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-jul-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-liquibase-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-liquibase-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-liquibase-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-mongodb2-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-mongodb2-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-mongodb2-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-mongodb3-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-mongodb3-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-mongodb3-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-slf4j18-impl-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-slf4j18-impl-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-slf4j18-impl-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-slf4j-impl-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-slf4j-impl-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-slf4j-impl-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-taglib-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-taglib-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-taglib-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-to-slf4j-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-to-slf4j-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-to-slf4j-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-web-2.11.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-web-2.11.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/log4j-web-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/poi-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/poi-examples-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/poi-excelant-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/poi-ooxml-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/poi-ooxml-schemas-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/poi-scratchpad-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Bien import de code/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Connect Database/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Connect Database/New folder/Microsoft JDBC Driver 6.0 for SQL Server/sqljdbc_6.0/enu/jre8/sqljdbc42.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Commons Jar/commons-io-2.6/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Commons Jar/commons-io-2.6/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Commons Jar/commons-io-2.6/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Commons Jar/commons-io-2.6/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Commons Jar/commons-io-2.6/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Sendmail Jar/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/oanhpttt/Selenium/Sendmail Jar/javax.mail-api-1.5.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
