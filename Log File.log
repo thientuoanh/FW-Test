@@ -748,3 +748,29 @@ Session ID: e7791260189c3d93117b2548d5caaa2a
 2020-07-13 22:20:44,102 INFO  [Log] X 
 2020-07-13 22:20:44,102 INFO  [Log] X 
 2020-07-13 22:20:44,102 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-13 22:34:33,267 INFO  [Log] **************************************************************************************** 
+2020-07-13 22:34:33,268 INFO  [Log] **************************************************************************************** 
+2020-07-13 22:34:33,268 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Mua_Hang       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-13 22:34:33,268 INFO  [Log] **************************************************************************************** 
+2020-07-13 22:34:33,268 INFO  [Log] **************************************************************************************** 
+2020-07-13 22:34:33,270 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-13 22:34:43,292 INFO  [Log] Nguoi dung nhap dia chi email la: thientuoanh@gmail.com 
+2020-07-13 22:34:46,522 INFO  [Log] Nguoi dung nhap so phone la: 0974105249 
+2020-07-13 22:36:48,305 ERROR [Log] Khong tim thay Element de doi --- Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='address'] (tried for 120 second(s) with 1000 milliseconds interval) 
+2020-07-13 22:36:48,308 ERROR [Log] Khong the nhap --- no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DICOANHPHAN1', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\oanhphan\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 83.0.4103.116, webStorageEnabled: true}
+Session ID: 3d336a429e4b82c1bb4b23fd8425be2f
+*** Element info: {Using=xpath, value=//*[@id='address']} 
+2020-07-13 22:36:48,452 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-13 22:36:48,452 INFO  [Log] X 
+2020-07-13 22:36:48,452 INFO  [Log] X 
+2020-07-13 22:36:48,452 INFO  [Log] X 
+2020-07-13 22:36:48,452 INFO  [Log] X 
+2020-07-13 22:36:48,452 INFO  [Log] TESTCASES IS COMPLETED!!! 
