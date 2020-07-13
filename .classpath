@@ -103,5 +103,6 @@
 	<classpathentry kind="lib" path="D:/Oanhpttt/Ao Thun/Selenium/Library for develop/apache-log4j-2.11.2-bin/log4j-web-2.11.2.jar"/>
 	<classpathentry kind="lib" path="D:/Oanhpttt/Ao Thun/Selenium/Library for develop/apache-log4j-2.11.2-bin/log4j-web-2.11.2-javadoc.jar"/>
 	<classpathentry kind="lib" path="D:/Oanhpttt/Ao Thun/Selenium/Library for develop/apache-log4j-2.11.2-bin/log4j-web-2.11.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Oanhpttt/Ao Thun/Selenium/Library for develop/Java Mail/javax.mail-1.6.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

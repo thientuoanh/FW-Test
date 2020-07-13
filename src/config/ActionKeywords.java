@@ -140,6 +140,9 @@ public class ActionKeywords {
 	static SimpleDateFormat obDateFormat = new SimpleDateFormat("dd-MM-yyyy");
 	
 	static String tenemail = null;
+	
+	static String emailminerva = null;
+	static String phoneminerva = null;
 
 	public static void openBrowser(String object, String data) {
 
@@ -665,6 +668,7 @@ public class ActionKeywords {
 					});
 	 
 			try {
+				
 	 
 				// Create object of MimeMessage class
 				Message message = new MimeMessage(session);
@@ -756,6 +760,65 @@ public class ActionKeywords {
 //*********************************************************************************************************************************************************************//	
 
 	// CODE DANH CHO HAM KIEM TRA
+	
+	// CDOE FOR MINERVA
+	public static void InputEmailMinerva(String object, String data) {
+		try {
+
+			
+			driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(data);
+			emailminerva = data;
+			System.out.println("Nguoi dung nhap dia chi email la:" + " " + emailminerva);
+			Log.info("Nguoi dung nhap dia chi email la:" + " " + emailminerva);
+
+		} catch (Exception e) {
+			Log.error("Khong the senkey --- " + e.getMessage());
+			DiWMS_AutoTest_GUI.bResult = false;
+		}
+	}
+	
+	public static void InputPhoneMinerva(String object, String data) {
+		try {
+			
+			driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(data);
+			phoneminerva = data;
+			System.out.println("Nguoi dung nhap so phone la:" + " " + phoneminerva);
+			Log.info("Nguoi dung nhap so phone la:" + " " + phoneminerva);
+
+		} catch (Exception e) {
+			Log.error("Khong the senkey --- " + e.getMessage());
+			DiWMS_AutoTest_GUI.bResult = false;
+		}
+	}
+	
+	public static void CheckMuaHangMinerva(String object, String data) {
+		try {
+			
+			String emailminerva2 = driver.findElement(By.xpath("/html/body/div[1]/div/div/dl/dd[1]")).getText();
+			String phonenminerva2 = driver.findElement(By.xpath("/html/body/div[1]/div/div/dl/dd[3]")).getText();
+			if (emailminerva.equals(emailminerva2) && phoneminerva.equals(phonenminerva2)) {
+				System.out.println("Submit thanh cong");
+				Log.info("Submit thanh cong");
+				
+				takeSnapShot(driver, "CaptureAfterOrder\\InformationOrder" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
+				SendMail(("CaptureAfterOrder\\InformationOrder" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
+
+
+			} else {
+				System.out.println("Submit that bai");
+				Log.info("Submit that bai");
+			}
+			
+						
+		} catch (Exception e) {
+			Log.error("Khong the kiem tra --- " + e.getMessage());
+			DiWMS_AutoTest_GUI.bResult = false;
+		}
+	}
+	
+	
+	// CDOE FOR MINERVA
+	
 	public static void InputAndEnterSLThucNhap(String object, String data) {
 		try {
 
