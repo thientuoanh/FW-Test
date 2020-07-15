@@ -680,13 +680,13 @@ public class ActionKeywords {
 				message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(data));
 	            
 	                        // Add the subject link
-				message.setSubject("Error Capture");
+				message.setSubject("Image Capture");
 	 
 				// Create object to add multimedia type content
 				BodyPart messageBodyPart1 = new MimeBodyPart();
 	 
 				// Set the body of email
-				messageBodyPart1.setText("Function error");
+				messageBodyPart1.setText("Email system auto sending");
 	 
 				// Create another object to add another content
 				MimeBodyPart messageBodyPart2 = new MimeBodyPart();
@@ -801,6 +801,7 @@ public class ActionKeywords {
 				Log.info("Submit thanh cong");
 				
 				takeSnapShot(driver, "CaptureAfterOrder\\InformationOrder" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
+				ReadFileTXT(tenemail);
 				SendMail(("CaptureAfterOrder\\InformationOrder" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
 
 
