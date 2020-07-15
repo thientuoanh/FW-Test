@@ -34,7 +34,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 //import static executionEngine.DiWMS_AutoTest_GUI.OR;
-import static executionEngine.DiWMS_AutoTest_GUI.OR;
+import static executionEngine.main_run_gui.OR;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -54,7 +54,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 //import executionEngine.DiWMS_AutoTest_GUI;
-import executionEngine.DiWMS_AutoTest_GUI;
+import executionEngine.main_run_gui;
 import utility.Log;
 
 public class ActionKeywords {
@@ -166,7 +166,7 @@ public class ActionKeywords {
 			driver.manage().timeouts().implicitlyWait(implicitWaitTime, TimeUnit.SECONDS);
 		} catch (Exception e) {
 			Log.info("Khong the mo Browser --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -177,7 +177,7 @@ public class ActionKeywords {
 			driver.get(OR.getProperty(object));
 		} catch (Exception e) {
 			Log.info("khong the chuyen huong --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -188,7 +188,7 @@ public class ActionKeywords {
 			driver.get(Constants.URL);
 		} catch (Exception e) {
 			Log.info("khong the chuyen huong --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -199,7 +199,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object.trim()))).sendKeys(data);
 		} catch (Exception e) {
 			Log.error("Khong the nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -210,7 +210,7 @@ public class ActionKeywords {
 			driver.findElement(By.id(OR.getProperty(object.trim()))).sendKeys(data);
 		} catch (Exception e) {
 			Log.error("Khong the nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -220,7 +220,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object.trim()))).sendKeys(data);
 		} catch (Exception e) {
 			Log.error("Khong the nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -235,7 +235,7 @@ public class ActionKeywords {
 			actions.build().perform();
 		} catch (Exception e) {
 			Log.error("Khong the nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -249,7 +249,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the select --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -260,7 +260,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object))).click();
 		} catch (Exception e) {
 			Log.error("Khong the click --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -271,7 +271,7 @@ public class ActionKeywords {
 			driver.findElement(By.id(OR.getProperty(object))).click();
 		} catch (Exception e) {
 			Log.error("Khong the click --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -282,7 +282,7 @@ public class ActionKeywords {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(object))));
 		} catch (Exception e) {
 			Log.error("Khong tim thay Element de doi --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -292,7 +292,7 @@ public class ActionKeywords {
 			Thread.sleep(3000);
 		} catch (Exception e) {
 			Log.error("Khong the doi --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -302,7 +302,7 @@ public class ActionKeywords {
 			Thread.sleep(5000);
 		} catch (Exception e) {
 			Log.error("Khong the doi --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -312,7 +312,7 @@ public class ActionKeywords {
 			Thread.sleep(10000);
 		} catch (Exception e) {
 			Log.error("Khong the doi --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -322,7 +322,7 @@ public class ActionKeywords {
 			Thread.sleep(1000);
 		} catch (Exception e) {
 			Log.error("Khong the doi --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -332,7 +332,7 @@ public class ActionKeywords {
 			Thread.sleep(500);
 		} catch (Exception e) {
 			Log.error("Khong the doi --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -342,7 +342,7 @@ public class ActionKeywords {
 			driver.quit();
 		} catch (Exception e) {
 			Log.error("Khong the dong Browser --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -362,7 +362,7 @@ public class ActionKeywords {
 			Log.info("HDDV1:" + " " + data);
 		} catch (Exception e) {
 			Log.error("Khong the nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -373,7 +373,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(Keys.ENTER);
 		} catch (Exception e) {
 			Log.error("Khong the enter --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -384,7 +384,7 @@ public class ActionKeywords {
 			js.executeScript("window.scrollBy(0,1000)");
 		} catch (Exception e) {
 			Log.error("Khong the keo scroll xuong cuoi trang --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -395,7 +395,7 @@ public class ActionKeywords {
 			js.executeScript("window.scrollTo(0,0)");
 		} catch (Exception e) {
 			Log.error("Khong the keo scroll xuong cuoi trang --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -407,7 +407,7 @@ public class ActionKeywords {
 			js.executeScript("arguments[0].scrollIntoView();", vitrikeoden);
 		} catch (Exception e) {
 			Log.error("Khong the keo thanh scroll ngang --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -417,7 +417,7 @@ public class ActionKeywords {
 			driver.navigate().refresh();
 		} catch (Exception e) {
 			Log.error("Khong the refresh --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -428,7 +428,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(Keys.DOWN);
 		} catch (Exception e) {
 			Log.error("Khong the lay phan tu dau tien --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -440,7 +440,7 @@ public class ActionKeywords {
 					Keys.ENTER);
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -451,7 +451,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(Keys.chord(Keys.CONTROL, "a"), data);
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -463,7 +463,7 @@ public class ActionKeywords {
 					Keys.TAB);
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -474,7 +474,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(Keys.TAB);
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -486,7 +486,7 @@ public class ActionKeywords {
 			;
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -498,7 +498,7 @@ public class ActionKeywords {
 			;
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -509,7 +509,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(Keys.chord(Keys.CONTROL, "a"), data);
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -521,7 +521,7 @@ public class ActionKeywords {
 			}
 		} catch (Exception e) {
 			Log.error("Not appear pop up to switch" + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -532,7 +532,7 @@ public class ActionKeywords {
 			driver.switchTo().window(tabs4.get(3));
 		} catch (Exception e) {
 			Log.error("Chuyen tab that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -543,7 +543,7 @@ public class ActionKeywords {
 			driver.switchTo().window(tabs3.get(2));
 		} catch (Exception e) {
 			Log.error("Chuyen tab that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -554,7 +554,7 @@ public class ActionKeywords {
 			driver.switchTo().window(tabs2.get(1));
 		} catch (Exception e) {
 			Log.error("Chuyen tab that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -564,7 +564,7 @@ public class ActionKeywords {
 			driver.switchTo().window(tabs1.get(0));
 		} catch (Exception e) {
 			Log.error("Chuyen tab that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -597,7 +597,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("random that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -628,7 +628,7 @@ public class ActionKeywords {
 		}
 		catch (Exception e) {
 			Log.error("Call Capture that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	
@@ -732,7 +732,7 @@ public class ActionKeywords {
 		}
 		catch (Exception e) {
 			Log.error("Send Mail that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	
@@ -749,7 +749,7 @@ public class ActionKeywords {
 		}
 		catch (Exception e) {
 			Log.error("Call Capture that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -773,7 +773,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	
@@ -787,7 +787,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	
@@ -812,7 +812,7 @@ public class ActionKeywords {
 						
 		} catch (Exception e) {
 			Log.error("Khong the kiem tra --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	
@@ -831,7 +831,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -847,7 +847,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -862,7 +862,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -874,7 +874,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("Get link HDDV that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 
 	}
@@ -898,7 +898,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("Tao HDDV that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 
 	}
@@ -911,7 +911,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("Khong link duoc HDNK --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -933,7 +933,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("Tao HDNK that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -945,7 +945,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong link duoc trang To Khai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -967,7 +967,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("Tao To Khai  that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -981,7 +981,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Phieu nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1004,7 +1004,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Phieu nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1019,7 +1019,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong link duoc trang Phieu nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1030,7 +1030,7 @@ public class ActionKeywords {
 			driver.get(Constants.LinkDSPhieuNhap);
 		} catch (Exception e) {
 			Log.info("khong link duoc trang Phieu nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1044,7 +1044,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Phieu xuat --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1067,7 +1067,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Phieu xuat --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1078,7 +1078,7 @@ public class ActionKeywords {
 			driver.get(Constants.LinkDSPhieuxuat);
 		} catch (Exception e) {
 			Log.info("khong link duoc trang Phieu xuat --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1092,7 +1092,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong link duoc trang Phieu xuat --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1111,7 +1111,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1142,7 +1142,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1163,7 +1163,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1195,7 +1195,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1230,7 +1230,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1250,7 +1250,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1270,7 +1270,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1301,7 +1301,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1325,7 +1325,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong da xuat --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1349,7 +1349,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong da Nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1363,7 +1363,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Phieu Chuyen Kho --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1375,7 +1375,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Phieu Chuyen Kho --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1397,7 +1397,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Phieu chuyen kho --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1422,7 +1422,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong link duoc trang Phieu nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1437,7 +1437,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link San pham --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1460,7 +1460,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link San pham --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	// SAN PHAM
@@ -1476,7 +1476,7 @@ public class ActionKeywords {
 			Log.info("HDNK1" + " " + data);
 		} catch (Exception e) {
 			Log.error("Khong the nhap So hop dong --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1490,7 +1490,7 @@ public class ActionKeywords {
 			Log.info("To Khai 1" + " " + data);
 		} catch (Exception e) {
 			Log.error("Khong the nhap ToKhai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	// HDNK
@@ -1506,7 +1506,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Order Kit --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1529,7 +1529,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Order Kit --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1543,7 +1543,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link Phieu Chuyen Kho --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1557,7 +1557,7 @@ public class ActionKeywords {
 			Log.info("Ma Kit01 la: " + " " + Ma_Kit01);
 		} catch (Exception e) {
 			Log.error("Khong get duoc ma kit01 --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1571,7 +1571,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link dac ta Kit --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1594,7 +1594,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc link dac ta Kit --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1612,7 +1612,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("random that bai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1632,7 +1632,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc ma phieu nhap --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1697,7 +1697,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc ma phieu xuat --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1753,7 +1753,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc ma phieu K12 --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1810,7 +1810,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc maphieuk31_1 --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1893,7 +1893,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1943,7 +1943,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1969,7 +1969,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -1994,7 +1994,7 @@ public class ActionKeywords {
 			}
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2016,7 +2016,7 @@ public class ActionKeywords {
 			}
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2031,7 +2031,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2054,7 +2054,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2074,7 +2074,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2099,12 +2099,12 @@ public class ActionKeywords {
 				Log.info("Tao that bai" + "\n");
 				takeSnapShot(driver, "CaptureError\\MaPhieuSO_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\MaPhieuSO_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2128,12 +2128,12 @@ public class ActionKeywords {
 				Log.info("Status cua SO tren list sai" + "\n");				
 				takeSnapShot(driver, "CaptureError\\StatusSOList_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\StatusSOList_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2160,7 +2160,7 @@ public class ActionKeywords {
 				Log.info("Tao Shipment that bai" + "\n");
 				takeSnapShot(driver, "CaptureError\\MaPhieuShipment_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\MaPhieuShipment_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), "");
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 			Thread.sleep(1000);
@@ -2183,12 +2183,12 @@ public class ActionKeywords {
 				Log.info("Status Shipment tren list Sai" + "\n");
 				takeSnapShot(driver, "CaptureError\\StatusShipmentList_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\StatusShipmentList_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2214,14 +2214,14 @@ public class ActionKeywords {
 
 				takeSnapShot(driver, "CaptureError\\UnCheckPartialShipment" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\UnCheckPartialShipment" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 				partial2.click();
 				Thread.sleep(1000);
 			}
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2249,7 +2249,7 @@ public class ActionKeywords {
 				Log.info("Status SO detail sai" + "\n");
 				takeSnapShot(driver, "CaptureError\\StatusSODetail_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\StatusSODetail_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 			// Ordered qty SO
@@ -2280,7 +2280,7 @@ public class ActionKeywords {
 						Log.info("Ordered qty SO " + pd + " sai" + "\n");
 						takeSnapShot(driver, "CaptureError\\OrderQty_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 						SendMail(("CaptureError\\OrderQty_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-						DiWMS_AutoTest_GUI.bResult = false;
+						main_run_gui.bResult = false;
 					}
 				}
 
@@ -2323,7 +2323,7 @@ public class ActionKeywords {
 					Log.info("Previously qty SO khong dung voi so luong da ship" + "\n");
 					takeSnapShot(driver, "CaptureError\\PreviouslyQty_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 					SendMail(("CaptureError\\PreviouslyQty_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-					DiWMS_AutoTest_GUI.bResult = false;
+					main_run_gui.bResult = false;
 				}
 
 			} catch (Exception e2) {
@@ -2370,7 +2370,7 @@ public class ActionKeywords {
 						Log.info("Pending qty SO sai" + "\n");
 						takeSnapShot(driver, "CaptureError\\PendingQty_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 						SendMail(("CaptureError\\PendingQty_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-						DiWMS_AutoTest_GUI.bResult = false;
+						main_run_gui.bResult = false;
 					}
 
 				}
@@ -2400,7 +2400,7 @@ public class ActionKeywords {
 						Log.info("Status tren Item SO sai" + "\n");
 						takeSnapShot(driver, "CaptureError\\StatusItemSO_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 						SendMail(("CaptureError\\StatusItemSO_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-						DiWMS_AutoTest_GUI.bResult = false;
+						main_run_gui.bResult = false;
 					}
 				}
 
@@ -2410,7 +2410,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2440,7 +2440,7 @@ public class ActionKeywords {
 						takeSnapShot(driver, "CaptureError\\NotDisplay_MessageError" + "_"
 								+ obDateFormat.format(obDate.getTime()) + ".png");
 						SendMail(("CaptureError\\NotDisplay_MessageError" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-						DiWMS_AutoTest_GUI.bResult = false;
+						main_run_gui.bResult = false;
 					}
 
 				}
@@ -2453,7 +2453,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2464,7 +2464,7 @@ public class ActionKeywords {
 			driver.findElement(By.xpath(OR.getProperty(object))).sendKeys(Keys.chord(Keys.CONTROL, "a"), maphieuSO_1);
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2476,7 +2476,7 @@ public class ActionKeywords {
 					maphieuShipment_1);
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2504,7 +2504,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the senkey --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2593,12 +2593,12 @@ public class ActionKeywords {
 				Log.info("Ton kho sau khi Xuat SO sai" + "\n");
 				takeSnapShot(driver, "CaptureError\\TonKho2_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\TonKho2_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2667,7 +2667,7 @@ public class ActionKeywords {
 			}
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2784,7 +2784,7 @@ public class ActionKeywords {
 			}
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2836,7 +2836,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2885,12 +2885,12 @@ public class ActionKeywords {
 				Log.info("So luong available cua moi item SAI" + "\n");
 				takeSnapShot(driver, "CaptureError\\AvailableItemShipment_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\AvailableItemShipment_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 		} catch (Exception e) {
 			Log.info("khong get duoc so luong ton --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -2929,7 +2929,7 @@ public class ActionKeywords {
 				Log.info("Status Shipment sai" + "\n");
 				takeSnapShot(driver, "CaptureError\\StatusShipment_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\StatusShipment_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 			// Show du lieu item hien thi tren shipment
@@ -2997,7 +2997,7 @@ public class ActionKeywords {
 				Log.info("Total Qty Shipment sai" + "\n");
 				takeSnapShot(driver, "CaptureError\\TotalQty_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 				SendMail(("CaptureError\\TotalQty_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-				DiWMS_AutoTest_GUI.bResult = false;
+				main_run_gui.bResult = false;
 			}
 
 			// Item status Shipment
@@ -3019,7 +3019,7 @@ public class ActionKeywords {
 						Log.info("Status tren Item Shipment sai" + "\n");
 						takeSnapShot(driver, "CaptureError\\StatusItemShipment_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png");
 						SendMail(("CaptureError\\StatusItemShipment_Error" + "_" + obDateFormat.format(obDate.getTime()) + ".png"), tenemail);
-						DiWMS_AutoTest_GUI.bResult = false;
+						main_run_gui.bResult = false;
 					}
 				}
 
@@ -3029,7 +3029,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.error("Khong the get ma phieu --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	// *** SO ***
@@ -3059,7 +3059,7 @@ public class ActionKeywords {
 
 		} catch (Exception e) {
 			Log.info("khong link duoc trang To Khai --- " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 	

@@ -774,3 +774,37 @@ Session ID: 3d336a429e4b82c1bb4b23fd8425be2f
 2020-07-13 22:36:48,452 INFO  [Log] X 
 2020-07-13 22:36:48,452 INFO  [Log] X 
 2020-07-13 22:36:48,452 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-14 09:48:07,932 INFO  [Log] **************************************************************************************** 
+2020-07-14 09:48:07,956 INFO  [Log] **************************************************************************************** 
+2020-07-14 09:48:07,956 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Mua_Hang       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-14 09:48:07,956 INFO  [Log] **************************************************************************************** 
+2020-07-14 09:48:07,956 INFO  [Log] **************************************************************************************** 
+2020-07-14 09:48:07,959 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-14 09:48:24,342 INFO  [Log] Nguoi dung nhap dia chi email la: thientuoanh@gmail.com 
+2020-07-14 09:48:28,540 INFO  [Log] Nguoi dung nhap so phone la: 0974105249 
+2020-07-14 09:48:33,188 INFO  [Log] Submit thanh cong 
+2020-07-14 09:48:33,826 ERROR [Log] Send Mail that bai --- null 
+2020-07-14 09:48:34,077 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-14 09:48:34,077 INFO  [Log] X 
+2020-07-14 09:48:34,077 INFO  [Log] X 
+2020-07-14 09:48:34,077 INFO  [Log] X 
+2020-07-14 09:48:34,077 INFO  [Log] X 
+2020-07-14 09:48:34,077 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-14 10:41:14,071 ERROR [Log] Class Utils | Method getRowCount | Exception desc : null 
+2020-07-14 10:41:14,098 INFO  [Log] TESTCASES IS COMPLETED!!! 
+2020-07-14 10:49:53,262 INFO  [Log] **************************************************************************************** 
+2020-07-14 10:49:53,290 INFO  [Log] **************************************************************************************** 
+2020-07-14 10:49:53,290 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 Mua_Hang       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2020-07-14 10:49:53,290 INFO  [Log] **************************************************************************************** 
+2020-07-14 10:49:53,290 INFO  [Log] **************************************************************************************** 
+2020-07-14 10:49:53,293 ERROR [Log] Class Utils | Method getCellData | Exception desc : null 
+2020-07-14 10:50:05,188 INFO  [Log] Nguoi dung nhap dia chi email la: thientuoanh@gmail.com 
+2020-07-14 10:50:08,518 INFO  [Log] Nguoi dung nhap so phone la: 0974105249 
+2020-07-14 10:50:12,945 INFO  [Log] Submit thanh cong 
+2020-07-14 10:50:13,359 ERROR [Log] Send Mail that bai --- null 
+2020-07-14 10:50:13,628 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2020-07-14 10:50:13,628 INFO  [Log] X 
+2020-07-14 10:50:13,628 INFO  [Log] X 
+2020-07-14 10:50:13,628 INFO  [Log] X 
+2020-07-14 10:50:13,628 INFO  [Log] X 
+2020-07-14 10:50:13,628 INFO  [Log] TESTCASES IS COMPLETED!!! 

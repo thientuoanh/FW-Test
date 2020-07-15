@@ -13,7 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import config.Constants;
 //import executionEngine.DriverScript;
-import executionEngine.DiWMS_AutoTest_GUI;
+import executionEngine.main_run_gui;
 
 public class ExcelUtils {
 	private static XSSFSheet ExcelWSheet;
@@ -29,7 +29,7 @@ public class ExcelUtils {
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 		} catch (Exception e) {
 			Log.error("Class Utils | Method setExcelFile | Exception desc : " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 
@@ -56,7 +56,7 @@ public class ExcelUtils {
 			iNumber = ExcelWSheet.getLastRowNum() + 1;
 		} catch (Exception e) {
 			Log.error("Class Utils | Method getRowCount | Exception desc : " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 		return iNumber;
 	}
@@ -76,7 +76,7 @@ public class ExcelUtils {
 			}
 		} catch (Exception e) {
 			Log.error("Class Utils | Method getRowContains | Exception desc : " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 		return iRowNum;
 	}
@@ -97,7 +97,7 @@ public class ExcelUtils {
 			return number;
 		} catch (Exception e) {
 			Log.error("Class Utils | Method getRowContains | Exception desc : " + e.getMessage());
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 			return 0;
 		}
 	}
@@ -141,7 +141,7 @@ public class ExcelUtils {
 			ExcelWBook = new XSSFWorkbook(new FileInputStream(pathFile));
 // 				ExcelWBook = new XSSFWorkbook(new FileInputStream(chooser.getSelectedFile() + " "));
 		} catch (Exception e) {
-			DiWMS_AutoTest_GUI.bResult = false;
+			main_run_gui.bResult = false;
 		}
 	}
 }
