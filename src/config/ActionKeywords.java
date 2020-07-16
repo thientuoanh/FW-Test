@@ -736,6 +736,108 @@ public class ActionKeywords {
 		}
 	}
 	
+	public static void SendMailCall(String object, String data) {
+		try {
+			// Create object of Property file
+			Properties props = new Properties();
+	 
+			// this will set host of server- you can change based on your requirement 
+			props.put("mail.smtp.host", "smtp.gmail.com");
+	 
+			// set the port of socket factory 
+			props.put("mail.smtp.socketFactory.port", "465");
+	 
+			// set socket factory
+			props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+	 
+			// set the authentication to true
+			props.put("mail.smtp.auth", "true");
+	 
+			// set the port of SMTP server
+			props.put("mail.smtp.port", "465");
+	 
+			// This will handle the complete authentication
+			Session session = Session.getDefaultInstance(props,
+	 
+					new javax.mail.Authenticator() {
+	 
+						protected PasswordAuthentication getPasswordAuthentication() {
+	 
+						return new PasswordAuthentication("phanthientuoanh@gmail.com", "01665495266");
+	 
+						}
+	 
+					});
+	 
+			try {
+				
+	 
+				// Create object of MimeMessage class
+				Message message = new MimeMessage(session);
+	 
+				// Set the from address
+				message.setFrom(new InternetAddress(data));
+	 
+				// Set the recipient address
+				message.setRecipients(Message.RecipientType.TO,InternetAddress.parse(data));
+	            
+	                        // Add the subject link
+				message.setSubject("Image Capture");
+	 
+				// Create object to add multimedia type content
+				BodyPart messageBodyPart1 = new MimeBodyPart();
+	 
+				// Set the body of email
+				messageBodyPart1.setText("Email system auto sending");
+	 
+				// Create another object to add another content
+				MimeBodyPart messageBodyPart2 = new MimeBodyPart();
+	 
+				// Mention the file which you want to send
+//				String filename = OR.getProperty(object);
+//				String Filename = "";
+//				Filename = filename;
+//				String filename = "D:\\oanhpttt\\Selenium\\NewProject 2019\\ProjectTest\\JSON_API_Test.json";
+	 
+				// Create data source and pass the filename
+				DataSource source = new FileDataSource(OR.getProperty(object));
+	 
+				// set the handler
+				messageBodyPart2.setDataHandler(new DataHandler(source));
+	 
+				// set the file
+				messageBodyPart2.setFileName(OR.getProperty(object));
+	 
+				// Create object of MimeMultipart class
+				Multipart multipart = new MimeMultipart();
+	 
+				// add body part 1
+				multipart.addBodyPart(messageBodyPart2);
+	 
+				// add body part 2
+				multipart.addBodyPart(messageBodyPart1);
+	 
+				// set the content
+				message.setContent(multipart);
+	 
+				// finally send the email
+				Transport.send(message);
+	 
+				System.out.println("=====Email Sent Call=====");
+	 
+			} catch (MessagingException e) {
+	 
+				throw new RuntimeException(e);
+	 
+			}
+
+		}
+		catch (Exception e) {
+			Log.error("Send Mail that bai --- " + e.getMessage());
+			main_run_gui.bResult = false;
+		}
+	}
+	
 	public static void ReadFileTXT(String s) {
 		try {
 			final String dir = System.getProperty("user.dir");
@@ -748,7 +850,7 @@ public class ActionKeywords {
 
 		}
 		catch (Exception e) {
-			Log.error("Call Capture that bai --- " + e.getMessage());
+			Log.error("Read File txt that bai --- " + e.getMessage());
 			main_run_gui.bResult = false;
 		}
 	}
