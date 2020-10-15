@@ -48,6 +48,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -60,6 +61,7 @@ import utility.Log;
 public class ActionKeywords {
 
 	public static WebDriver driver;
+//	public static Action action;
 	static String tchddv = null;
 	static String tcsohddv = null;
 
@@ -3144,24 +3146,54 @@ public class ActionKeywords {
 	
 	// CHECK Universal Adapter
 	// ***********************
+	
+	public static void DragElementActivity(WebElement from, WebElement to) {
+//		WebDriver driver = new ChromeDriver();
+		final String JS_DRAG_AND_DROP = "var src=arguments[0],tgt=arguments[1];var dataTransfer={dropEff"
+				+ "ect:'',effectAllowed:'all',files:[],items:{},types:[],setData:f"
+				+ "unction(format,data){this.items[format]=data;this.types.append("
+				+ "format);},getData:function(format){return this.items[format];},"
+				+ "clearData:function(format){}};var emit=function(event,target){v"
+				+ "ar evt=document.createEvent('Event');evt.initEvent(event,true,f"
+				+ "alse);evt.dataTransfer=dataTransfer;target.dispatchEvent(evt);}"
+				+ ";emit('dragstart',src);emit('dragenter',tgt);emit('dragover',tg"
+				+ "t);emit('drop',tgt);emit('dragend',src);";
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript(JS_DRAG_AND_DROP, new Object[] { from, to });
+	}
+	
+	public static void DragAndDrop(WebElement from, WebElement to) {
+        Actions action = new Actions(driver);
+        action.dragAndDrop(from,to).perform();
+    }
+	
+	public static void DragToPostion(WebElement element, int from, int to) {
+        Actions action = new Actions(driver);
+        action.dragAndDropBy(element, from, to).build().perform();
+    }
+	
 	public static void DragAndDropSOAP(String object, String data) {
 		try {
 
 			//Element which needs to drag.    		
-        	WebElement From=driver.findElement
-        			(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/ng-include/div/div[1]/div[3]/div/div/div/div[2]/div[2]/ng-include/div/div[2]/div/div/div[4]/a/div[1]/img"));	
-         
+        	WebElement SOAP = driver.findElement
+        			(By.xpath("/html/body/app-root/app-layout/app-desktop/div/app-build/as-split/as-split-area[2]/div/div[2]/div/app-component-configuration/app-recipe/as-split/as-split-area/as-split/as-split-area[1]/app-workflow-toolbox/div/div[2]/div[1]/div[4]/div/div[2]/h4"));	
+        	                   
          //Element on which need to drop.		
-         WebElement To=driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/ng-include/div/div[1]/div[3]/div/div/div/div[1]/div/div/div[2]/div[1]"));					
+        	WebElement Destination = driver.findElement(By.xpath("/html/body/app-root/app-layout/app-desktop/div/app-build/as-split/as-split-area[2]/div/div[2]/div/app-component-configuration/app-recipe/as-split/as-split-area/as-split/as-split-area[2]/app-workflow-canvas/jsplumb-surface"));					
          		
-         //Using Action class for drag and drop.		
-         Actions act=new Actions(driver);					
-
-	//Dragged and dropped.		
-         act.dragAndDrop(From, To).build().perform();		
+        	DragAndDrop(SOAP,Destination);
+        	
+        	Thread.sleep(1000);
+        	
+        	WebElement SOAPpositon = driver.findElement
+        			(By.xpath("/html/body/app-root/app-layout/app-desktop/div/app-build/as-split/as-split-area[2]/div/div[2]/div/app-component-configuration/app-recipe/as-split/as-split-area/as-split/as-split-area[2]/app-workflow-canvas/jsplumb-surface/div/div[1]/div[5]/div[1]/img"));	
+        	DragToPostion(SOAPpositon, 100, -1000);
+	
 
 		} catch (Exception e) {
-			Log.info("khong link duoc trang To Khai --- " + e.getMessage());
+			Log.info("Drag failled --- " + e.getMessage());
 			main_run_gui.bResult = false;
 		}
 	}
