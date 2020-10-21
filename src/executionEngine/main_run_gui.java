@@ -13,6 +13,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 
 import config.ActionKeywords;
+import config.ActionKeywords_UniversalAdapter;
 import config.Constants;
 
 import utility.ExcelUtils;
@@ -41,6 +42,8 @@ public class main_run_gui extends JFrame {
 
 	public static Properties OR;
 	public static ActionKeywords actionKeywords;
+	public static ActionKeywords_UniversalAdapter actionkeywork_UA;
+	
 	public static String sActionKeyword;
 	public static String sPageObject;
 	public static Method method[];
@@ -137,7 +140,8 @@ public class main_run_gui extends JFrame {
 		for (int i = 0; i < method.length; i++) {
 
 			if (method[i].getName().equals(sActionKeyword)) {
-				method[i].invoke(actionKeywords, sPageObject, sData);
+//				method[i].invoke(actionKeywords, sPageObject, sData);
+				method[i].invoke(actionkeywork_UA, sPageObject, sData);
 				if (bResult == true) {
 					ExcelUtils.setCellData(Constants.KEYWORD_PASS, iTestStep, Constants.Col_TestStepResult,
 							Constants.Sheet_TestSteps, duongdanfile, "blue");
@@ -173,8 +177,11 @@ public class main_run_gui extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 
-		actionKeywords = new ActionKeywords();
-		method = actionKeywords.getClass().getMethods();
+//		actionKeywords = new ActionKeywords();
+//		method = actionKeywords.getClass().getMethods();
+		
+		actionkeywork_UA = new ActionKeywords_UniversalAdapter();
+		method = actionkeywork_UA.getClass().getMethods();
 
 		final JFileChooser chooser = new JFileChooser();
 		final JFileChooser chooser2 = new JFileChooser();
@@ -185,6 +192,7 @@ public class main_run_gui extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
 					duongdanfile = chooser.getSelectedFile() + " ";
+//					duongdanfile = linkfileExcelTestcase + " ";
 					ExcelUtils.setExcelFile(duongdanfile);
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
@@ -195,6 +203,7 @@ public class main_run_gui extends JFrame {
 
 				try {
 					FileInputStream fs = new FileInputStream(chooser2.getSelectedFile() + " ");
+//					FileInputStream fs = new FileInputStream(linkfileOR + " ");
 					OR = new Properties(System.getProperties());
 					OR.load(fs);
 				} catch (FileNotFoundException e1) {
@@ -242,6 +251,7 @@ public class main_run_gui extends JFrame {
 //					linkfileExcelTestcase = linkfileexcel;
 					System.out.println("getSelectedFile() : " + chooser.getSelectedFile());
 					txtExcelFile.setText(linkfileexcel);
+					linkfileExcelTestcase = txtExcelFile.getText();
 
 				} else {
 					System.out.println("No Selection ");
@@ -263,6 +273,7 @@ public class main_run_gui extends JFrame {
 					String linkfilOR = chooser2.getSelectedFile().getPath();
 					System.out.println("getSelectedFile() : " + chooser2.getSelectedFile());
 					txtORFile.setText(linkfilOR);
+					linkfileOR = txtORFile.getText();
 				} else {
 					System.out.println("No Selection ");
 

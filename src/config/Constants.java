@@ -18,20 +18,37 @@ public class Constants {
 	 
 
 	 
+//	 //List of Data Sheet Column Numbers
+//	 public static final int Col_TestCaseID = 0; 
+//	 public static final int Col_TestScenarioID = 1 ;
+//	 //This is the new column for 'Page Object'
+//	 public static final int Col_PageObject = 4 ;
+//	 //This column is shifted from 3 to 4
+//	 public static final int Col_ActionKeyword =5 ;
+//	 public static final int Col_RunMode =2 ;
+//	 
+//	 public static final int Col_Result =3 ;
+//	 public static final int Col_Loop_TestCase =4 ;
+//	 public static final int Col_Date_TestCase =5 ;
+//	 public static final int Col_DataSet =6 ;
+//	 public static final int Col_TestStepResult =7 ;
+	 
+	 
 	 //List of Data Sheet Column Numbers
 	 public static final int Col_TestCaseID = 0; 
-	 public static final int Col_TestScenarioID =1 ;
+	 public static final int Col_TestScenarioID = 1;
 	 //This is the new column for 'Page Object'
-	 public static final int Col_PageObject =4 ;
+	 public static final int Col_PageObject = 2;
 	 //This column is shifted from 3 to 4
-	 public static final int Col_ActionKeyword =5 ;
+	 public static final int Col_ActionKeyword = 3;
 	 public static final int Col_RunMode =2 ;
 	 
 	 public static final int Col_Result =3 ;
 	 public static final int Col_Loop_TestCase =4 ;
 	 public static final int Col_Date_TestCase =5 ;
-	 public static final int Col_DataSet =6 ;
-	 public static final int Col_TestStepResult =7 ;
+	 public static final int Col_DataSet = 4;
+	 public static final int Col_TestStepResult = 5;
+	 
 	 
 	 public static final String KEYWORD_FAIL = "FAIL";
 	 public static final String KEYWORD_PASS = "PASS";
